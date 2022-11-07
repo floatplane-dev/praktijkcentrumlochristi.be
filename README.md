@@ -14,7 +14,6 @@ This is the website of a GP in Lochristi, Belgium 🇧🇪.
 * Originally built in 2011 in PHP CMS Joomla. 🙄
 * Revamped with Gulp May 2017. 🍹
 * Maintained by [team Floatplane](https://floatplane.dev). 🚤
-* Code & design by [Jan Werkhoven](https://github.com/janwerkhoven). 🤸🏻‍♂️
 
 ---
 

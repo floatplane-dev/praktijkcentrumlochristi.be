@@ -1,27 +1,46 @@
-# praktijkcentrumlochristi.be
+# Praktijk Centrum Lochristi
 
 #### What
-The [website](http://www.praktijkcentrumlochristi.be/) of a medical centre in Lochristi, Belgium.
+
+This is the website of a GP in Lochristi, Belgium 🇧🇪.
+
+[www.praktijkcentrumlochristi.be](https://praktijkcentrumlochristi.be)
 
 #### Highlights
-* My first freelance website!
-* Built in 2011 in Joomla, refactored to static Grunt website in 2016
-* Built with Grunt, Handlebars, SASS, Photoshop, Atom & Git
 
-#### Setup
-1. Create folder and move to it: `mkdir -p ~/nabu/praktijkcentrumlochristi.be && cd $_`
-2. Clone this repo: `git clone git@github.com:janwerkhoven/praktijkcentrumlochristi.be.git .`
-3. Install packages: `npm install`
-4. Build dist, start server and watchers: `grunt`
-5. Go to [http://localhost:9000/](http://localhost:9000/)
-6. Open code with whatever fancies your panties, I use [Atom](https://atom.io/): `atom .`
-7. Happy coding!
+* Built with [Gulp](https://gulpjs.com), [Nunchucks](https://mozilla.github.io/nunjucks/), [SASS](https://sass-lang.com) and vanilla JS. 👾
+* Mobile & tablet friendly. ☺️
+* Served lightning fast by Nginx on SSD Debian server. ⚡
+* Originally built in 2011 in PHP CMS Joomla. 🙄
+* Revamped with Gulp May 2017. 🍹
+* Maintained by [team Floatplane](https://floatplane.dev). 🚤
 
-#### Contact
-Get in touch on [LinkedIn](https://au.linkedin.com/pub/jan-werkhoven/10/64/b30), [GitHub](https://github.com/janwerkhoven) or <a href="mailto:jan@nabu.io">jan@nabu.io</a>.
+---
 
--
+#### For developers
 
-**Jan Werkhoven**  
-Web Developer  
-& UI Designer
+First make sure you have [NVM](https://github.com/nvm-sh/nvm) and [PNPM](https://pnpm.io).
+
+```sh
+nvm install
+pnpm install
+pnpm serve
+```
+
+Open [http://localhost:9000/](http://localhost:9000/) and happy coding!
+
+For deployment to production:
+
+1. PR to branch `production`.
+2. Pass code review.
+3. Merge.
+4. Deployment happens automatically. 🚀
+
+---
+
+#### Questions?
+
+Ask team Floatplane!
+
+[hello@floatplane.dev](mailto:hello@floatplane.dev)  
+[www.floatplane.dev](floatplane.dev)

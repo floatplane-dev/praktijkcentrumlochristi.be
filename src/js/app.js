@@ -4,7 +4,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
 function init() {
   prepareBookModal();
-  fireGoogleAnalytics();
 }
 
 function prepareBookModal() {
@@ -46,19 +45,4 @@ function showModalContent(id) {
   document.querySelectorAll(`#modal section:not(#${id})`).forEach((element) => {
     element.classList.add("hide");
   });
-}
-
-function fireGoogleAnalytics() {
-  if (ga) {
-    const environment =
-      location.host === "www.praktijkcentrumlochristi.be"
-        ? "production"
-        : "development";
-
-    ga("create", "UA-26179509-5", "auto");
-    ga("set", {
-      dimension1: environment,
-    });
-    ga("send", "pageview");
-  }
 }

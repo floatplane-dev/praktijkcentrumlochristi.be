@@ -65,14 +65,7 @@ function css() {
     .pipe(
       autoprefixer({
         cascade: false,
-        browsers: [
-          "> 1% in AU",
-          "Explorer > 9",
-          "Firefox >= 17",
-          "Chrome >= 10",
-          "Safari >= 6",
-          "iOS >= 6",
-        ],
+        browsers: ["> 1% in BE"],
       })
     )
     .pipe(rename("app.min.css"))
@@ -101,11 +94,11 @@ function buildJs() {
 }
 
 // Concatenate all vendor JS
-function concatVendorJs() {
-  return src(["src/js/vendor/google-analytics.js"])
-    .pipe(concat("vendor.min.js"))
-    .pipe(dest("dist/assets/js"));
-}
+// function concatVendorJs() {
+//   return src(["src/js/vendor/google-analytics.js"])
+//     .pipe(concat("vendor.min.js"))
+//     .pipe(dest("dist/assets/js"));
+// }
 
 // Reports an overview of the `dist/` folder
 function report() {
@@ -136,7 +129,7 @@ function watchers() {
 
 // Create Gulp commands
 // https://gulpjs.com/docs/en/getting-started/creating-tasks
-const js = parallel(concatVendorJs, series(lintJs, buildJs));
+const js = parallel(series(lintJs, buildJs));
 const build = series(clean, parallel(assets, html, css, js), report);
 const serve = series(build, parallel(localhost, watchers));
 

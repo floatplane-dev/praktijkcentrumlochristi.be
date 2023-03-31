@@ -11,14 +11,19 @@
     <meta name="google-site-verification" content="{{googleSiteVerification}}"/>
     {% block meta %}
       <title>Praktijkcentrum Lochristi</title>
-      <meta name="description" content="Hier kan u terecht bij 3 huisartsen, 4 kinderpsychologen, 2 psychologe en 1 voedingsdeskundige. Gelegen net buiten de dorpskern van Lochristi."/>
+      <meta name="description" content="Hier kan u terecht bij Huisartsen Dr Marc De Jaeger, Dr Sara Van Thuyne, Dr Cedric Leys, Dr Pia Verhoeven en Dr Pia Verhoeven. Alsook voedingsdeskundige Céline Stadeus."/>
     {% endblock %}
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet" type="text/css"/>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"/>
-    <script src="/assets/js/vendor.min.js"></script>
-    <script src="/assets/js/app.min.js"></script>
-    <link href="/assets/css/app.min.css" rel="stylesheet" type="text/css">
     {% include "partials/favicons.njk" %}
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet" type="text/css"/>
+    <link href="/assets/css/app.min.css" rel="stylesheet" type="text/css">
+    <script src="/assets/js/app.min.js"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-WQ1W67NDDB"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-WQ1W67NDDB');
+    </script>
   </head>
 
   <body>
@@ -30,6 +35,5 @@
       {% include "partials/footer.njk" %}
     </div>
     {% include "partials/book-modal.njk" %}
-    {% include "partials/outdated-browsers.njk" %}
   </body>
 </html>

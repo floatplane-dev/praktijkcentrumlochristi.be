@@ -137,18 +137,18 @@ ul {
       p + img {
         margin-top: 30px;
       }
-      img {
-        display: block;
-        max-width: 100%;
-        height: auto;
-        &.black-border {
-          border: 3px solid black;
-        }
-        &.max-500 {
-          max-width: 500px;
-        }
-      }
     }
+  }
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  &.black-border {
+    border: 3px solid black;
+  }
+  &.max-500 {
+    max-width: 500px;
   }
 }
 iframe {

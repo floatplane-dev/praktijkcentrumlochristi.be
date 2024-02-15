@@ -6,11 +6,9 @@ const { src, dest, series, parallel, watch } = require("gulp");
 // https://gulpjs.com/docs/en/getting-started/using-plugins
 const autoprefixer = require("gulp-autoprefixer");
 const babel = require("gulp-babel");
-const concat = require("gulp-concat");
 const connect = require("gulp-connect");
 const del = require("del");
 const eslint = require("gulp-eslint");
-const normalize = require("node-normalize-scss");
 const nunjucksRender = require("gulp-nunjucks-render");
 const prettify = require("gulp-jsbeautifier");
 const rename = require("gulp-rename");
@@ -59,13 +57,11 @@ function css() {
     .pipe(
       sass({
         outputStyle: "compressed",
-        includePaths: normalize.includePaths,
       }).on("error", sass.logError)
     )
     .pipe(
       autoprefixer({
         cascade: false,
-        browsers: ["> 1% in BE"],
       })
     )
     .pipe(rename("app.min.css"))
